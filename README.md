@@ -1,38 +1,8 @@
 # to-do-list
 
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
-
-
-## Overview
-
-### Demo
-
-![](./images/Animation.gif)
-
-### Screenshot
-![](./images/img1_desktop.png)
-![](./images/img1_mobile.png)
-![](./images/img2_desktop.png)
-![](./images/img2_mobile.png)
-![](./images/img3_desktop.png)
-![](./images/img3_mobile.png)
-![](./images/img4_desktop.png)
-![](./images/img4_mobile.png)
-
 ### Links
 
 - Live Site URL: [https://vanilla-javascript-todo-list.netlify.app/](https://vanilla-javascript-todo-list.netlify.app/)
-
-## My process
 
 ### Built with
 
@@ -41,6 +11,7 @@
 - Mobile-first workflow
 - [JavaScript](https://www.javascript.com/)
 - [Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
 ### What I learned
 
 This project helped me in revising some of the core javascript concepts like DOM manipulations . I learned to use Local Storage to store data required to store the previous todos in the Todo App.
