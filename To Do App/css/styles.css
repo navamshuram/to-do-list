@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: linear-gradient(120deg, #fde68a, #075985) , url('https://images.unsplash.com/photo-1641154706848-fe27fd366032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'); */
+    background-image: 
+              linear-gradient(45deg, rgba(241, 239, 234, 0.62), rgba(
+                 20, 14, 1, 0.58)), url(
+    'https://images.unsplash.com/photo-1641154706848-fe27fd366032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Poppins", sans-serif ;
+    font-weight: 500;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2.5rem;
+    /* background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #fef9c3;
+}
+
+header,
+form {
+    min-height: 20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    background: #d4d4d8;
+    border-radius: 40px;
+    padding: 0.5rem;
+}
+
+form input, form button {
+    padding: 0.75rem;
+    font-size: 2rem;
+    border: none;
+    font-weight: 300;
+    outline: none;
+    background: #d4d4d8;
+    border-radius: 40px;
+}
+
+
+form button {
+    color:#075985 ;
+    background: #d4d4d8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background:#075985 ;
+    color: #d4d4d8;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+
+}
+
+.todo {
+    margin: 0.5rem;
+    background: #d4d4d8;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.todo input {
+    font-size: 1.1rem;
+    flex: 1;
+    width: 8rem;
+    border: none;
+    outline: none;
+}
+.trash-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.trash-btn, .complete-btn, .edit-btn, .save-btn {
+    background-color: #dc2626;
+    color: #fafafa;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: #84cc16;
+}
+
+.edit-btn {
+    background: #22d3ee;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.save-btn {
+    background-color: #166534;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.todo-item {
+    padding: 0rem 0.5rem;
+    background-color: #d4d4d8;
+}
+
+.fa-trash,
+.fa-check,
+.fa-pen,
+.fa-bookmark {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 1rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+select {
+    color: #075985;
+    font-size: large;
+    width: 10rem;
+    cursor: pointer;
+    background-color: #e2e8f0;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #075985;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    background: #e2e8f0;
+    color: #075985;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 2rem;
+    }
+    form input, form button {
+        /* padding: 0.5rem; */
+        font-size: 1rem;
+        border: none;
+        
+    }
+    select {
+        font-size:1rem;
+        width: 10rem;
+        padding: 15px 5px ;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .todo {
+        justify-content: space-around;
+    }
+    .todo input  {
+        font-size: 1rem;
+        flex: 0.8;
+    }
+    .input {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
